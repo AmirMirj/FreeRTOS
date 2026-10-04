@@ -1,14 +1,18 @@
 {
   "idf.currentSetup": "/home/amir/.espressif/v5.3.5/esp-idf",
-  "idf.flashType": "UART",
+  "idf.flashType": "JTAG",
   "idf.port": "/dev/ttyACM0",
   "idf.customExtraVars": {
-    "IDF_TARGET": "esp32s3"
+    "IDF_TARGET": "esp32s3",
+    "OPENOCD_USB_ADAPTER_LOCATION": "1-1"
   },
   "clangd.path": "/home/amir/.espressif/tools/esp-clang/16.0.1-fe4f10a809/esp-clang/bin/clangd",
   "clangd.arguments": [
     "--background-index",
     "--query-driver=**",
     "--compile-commands-dir=/home/amir/.espressif/esp_idf_workspace/ch8/build"
+  ],
+  "idf.openOcdConfigs": [
+    "board/esp32s3-builtin.cfg"
   ]
 }
